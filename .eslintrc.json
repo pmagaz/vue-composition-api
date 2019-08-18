@@ -1,0 +1,111 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "propWrapperFunctions": [
+      "forbidExtraProps",
+      {
+        "property": "freeze",
+        "object": "Object"
+      },
+      {
+        "property": "myFavoriteWrapper"
+      }
+    ]
+  },
+  "extends": [
+    "airbnb-base",
+    "plugin:vue/recommended"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "plugins": [],
+  "rules": {
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "no-unused-vars": "off",
+    "jsx-quotes": ["error", "prefer-double"],
+    "import/default": "off",
+    "import/no-duplicates": "error",
+    "import/no-extraneous-dependencies": "off",
+    "import/extensions": "off",
+    "import/named": "off",
+    "import/namespace": "off",
+    "import/no-unresolved": "off",
+    "import/no-named-as-default": "off",
+    "import/prefer-default-export": "off",
+
+    "no-restricted-syntax": [
+      "error",
+      "WithStatement",
+      "BinaryExpression[operator='in']"
+    ],
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectPattern": "never",
+        "ImportDeclaration": "never",
+        "ExportDeclaration": "never"
+      }
+    ],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "any",
+        "prev": ["export", "import"],
+        "next": ["export", "import"]
+      }
+    ],
+    "max-params": ["error", 3],
+    "max-lines": ["error", { "max": 200, "skipComments": true }],
+    "max-lines-per-function": ["error", { "max": 100, "skipBlankLines": true }],
+    "lines-between-class-members": ["warn", "always"],
+    "implicit-arrow-linebreak": ["off", "beside"],
+    "arrow-body-style": ["off", "as-needed"],
+    "max-len": ["error", { "code": 120 }],
+    "max-statements-per-line": ["error", { "max": 1 }],
+    "object-curly-spacing": ["error", "always"],
+    "template-curly-spacing": ["error", "always"],
+    "comma-dangle": "off",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-alert": "off",
+    "semi": "error",
+    "no-var": "error",
+    "no-return-assign": "off",
+    "space-before-blocks": "error",
+    "keyword-spacing": "error",
+    "no-global-assign": "off",
+    "no-unsafe-negation": "off",
+    "space-in-parens": ["error", "never"],
+    "eol-last": "off",
+    "no-trailing-spaces": "off",
+    "padded-blocks": "off",
+    "arrow-parens": "off",
+    "prefer-arrow-callback": "error",
+    "no-param-reassign": ["warn", { "props": false }],
+    "linebreak-style": "off",
+    "no-use-before-define": "off",
+    "class-methods-use-this": "off",
+    "no-multiple-empty-lines": "error"
+  },
+  "overrides": [
+    {
+      "files": ["*.spec.tsx"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ]
+}

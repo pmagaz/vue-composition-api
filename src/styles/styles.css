@@ -1,0 +1,5 @@
+@import "./variables.css";
+
+#app{
+  background-color: var(--main-color);
+}

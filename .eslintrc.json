@@ -20,8 +20,8 @@
     ]
   },
   "extends": [
-    "airbnb-base",
-    "plugin:vue/recommended"
+    "plugin:vue/essential",
+    "eslint:recommended"
   ],
   "parser": "vue-eslint-parser",
   "parserOptions": {
@@ -38,7 +38,7 @@
     "no-unused-vars": "off",
     "jsx-quotes": ["error", "prefer-double"],
     "import/default": "off",
-    "import/no-duplicates": "error",
+    "import/no-duplicates": [0, { "includeExports": true }],
     "import/no-extraneous-dependencies": "off",
     "import/extensions": "off",
     "import/named": "off",

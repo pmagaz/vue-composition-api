@@ -1,9 +1,10 @@
-import Vue from 'vue';
-import router from './routes';
-import App from './App.vue';
+import Vue from "vue";
+import { plugin } from "vue-function-api";
+import App from "./App.vue";
+
+Vue.config.productionTip = false;
+Vue.use(plugin);
 
 new Vue({
-  el: '#app',
-  router,
   render: h => h(App)
-});
+}).$mount("#app");

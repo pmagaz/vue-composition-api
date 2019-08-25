@@ -1,25 +1,8 @@
 {
   "presets": [
-    [
-      "@babel/preset-env",
-      {
-        "targets": {
-          "browsers": ["last 2 versions", "ie >= 11"]
-        },
-        "useBuiltIns": "entry",
-      }
-    ],
+    "@babel/preset-env",
   ],
   "plugins": [
-    [
-      "transform-runtime",
-      "dynamic-import-node",
-      "module-resolver",
-      {
-        "root": [
-          "./src"
-        ]
-      }
-    ]
-  ],
+    "@babel/plugin-transform-runtime"
+  ]
 }

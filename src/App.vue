@@ -1,16 +1,19 @@
 <template>
-  <div id="app">
-    <function-api-component />
-  </div>
+    <div id="app">
+    <legend>API CALL WITH WATCH</legend>
+    <div>
+      <ApiCall/>
+    </div>
+    </div>
 </template>
 
 <script>
 
-import FunctionApiComponent from './components/FunctionApiComponent.vue';
+import ApiCall from './components/ApiCall.vue';
 export default {
   name: 'app',
   components: {
-    'function-api-component': FunctionApiComponent,
+    ApiCall,
   },
 };
 </script>

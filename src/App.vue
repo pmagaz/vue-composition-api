@@ -6,7 +6,7 @@
       </div>
         <legend>API CALL CUSTOM COMPOSITION</legend>
       <div>
-        <ApiCall/>
+        <ApiCallComposition/>
       </div>
     </div>
 </template>

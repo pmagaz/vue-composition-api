@@ -16,28 +16,13 @@
 </template>
 <script>
 
-import { value, watch, computed } from 'vue-function-api';
-
-const useGetPosts = (props) => {
-  const posts = value([]);
-  const loading = value(true);
-  const count = computed(() => posts.value.length)
-  watch(
-    () => count,
-    async () => {
-      const res = await fetch('https://pablomagaz.com/api/posts');
-      const data = await res.json();
-      posts.value = data.posts;
-      loading.value = false;
-    });
-
-  return { count, posts, loading };
-}
+import { useGetPosts } from '../compositions/useGetPosts';
 
 export default {
   name: 'ApiCallComposition',
   setup(props) {
-    const { count, posts, loading } = useGetPosts(props)
+    const { count, posts, loading } = useGetPosts();
+    return { count, posts, loading };
   } 
 };
 </script>

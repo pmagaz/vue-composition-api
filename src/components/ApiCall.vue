@@ -23,7 +23,7 @@ export default {
   setup(props) {
     const posts = value([]);
     const loading = value(true);
-    const count = computed(() => posts.value.length)
+    const count = computed(() => posts.value.length);
     watch(
       () => count,
       async () => {

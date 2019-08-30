@@ -19,6 +19,10 @@ $ yarn start
 
 ### Examples
 
+* `ApiCall.vue` Example using value, computeed and watch to make an API call.
+* `ApiCallComposition.vue` Improved example isolating logic with composition function.
+
+
 ### Warning
 
 Vue 3 Function API is still an RFC that could have changes. This repository and its examples were made for educational purposes only. DON'T use them in production.

@@ -19,7 +19,6 @@
 import { value, watch, computed } from 'vue-function-api';
 
 export default {
-  name: 'ApiCall',
   setup(props) {
     const posts = value([]);
     const loading = value(true);

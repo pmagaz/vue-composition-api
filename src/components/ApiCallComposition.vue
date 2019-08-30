@@ -19,7 +19,6 @@
 import { useGetPosts } from '../compositions/useGetPosts';
 
 export default {
-  name: 'ApiCallComposition',
   setup(props) {
     const { count, posts, loading } = useGetPosts();
     return { count, posts, loading };

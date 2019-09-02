@@ -21,7 +21,7 @@ $ yarn start
 
 * `ApiCall.vue` Example using value, computeed and watch to make an API call.
 * `ApiCallComposition.vue` Improved example isolating logic with composition function.
-
+* `ApiCallCompositionReactive.vue` Same example using reactive instead ref.
 
 ### Warning
 

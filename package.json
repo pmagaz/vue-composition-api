@@ -1,9 +1,9 @@
 {
-  "name": "vue-function-api",
+  "name": "vue-composition-api",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/pmagaz/parcel-example.git",
-  "description": "Testing the upcoming Vue 3 Function API",
+  "repository": "https://github.com/pmagaz/vue-composition-api.git",
+  "description": "Testing the upcoming Vue 3 Composition API",
   "author": "Pablo Magaz <magazpablo@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -15,7 +15,7 @@
     "@vue/cli-plugin-babel": "3.11.0",
     "@vue/cli-plugin-eslint": "3.11.0",
     "@vue/cli-service": "3.11.0",
-    "@vue/composition-api": "3.0.0",
+    "@vue/composition-api": "0.3.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.2.2",
     "eslint-plugin-vue": "^5.0.0",

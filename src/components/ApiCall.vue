@@ -16,12 +16,13 @@
 </template>
 <script>
 
-import { value, watch, computed } from 'vue-function-api';
+import { ref, watch, computed } from '@vue/composition-api';
 
 export default {
-  setup(props) {
-    const posts = value([]);
-    const loading = value(true);
+
+setup(props) {
+    const posts = ref([]);
+    const loading = ref(true);
     const count = computed(() => posts.value.length);
     watch(
       () => count,

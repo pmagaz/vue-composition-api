@@ -8,6 +8,10 @@
       <div>
         <ApiCallComposition/>
       </div>
+     <legend>API CALL CUSTOM COMPOSITION WITH REACTIVE</legend>
+      <div>
+        <ApiCallCompositionReactive/>
+      </div>
     </div>
 </template>
 
@@ -15,12 +19,14 @@
 
 import ApiCall from './components/ApiCall.vue';
 import ApiCallComposition from './components/ApiCallComposition.vue';
+import ApiCallCompositionReactive from './components/ApiCallCompositionReactive.vue';
 
 export default {
   name: 'app',
   components: {
     ApiCall,
     ApiCallComposition,
+    ApiCallCompositionReactive,
   },
 };
 </script>

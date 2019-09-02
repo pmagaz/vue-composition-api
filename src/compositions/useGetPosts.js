@@ -1,8 +1,8 @@
-import { value, watch, computed } from 'vue-function-api';
+import { ref, watch, computed } from '@vue/composition-api';
 
 export const useGetPosts = () => {
-  const posts = value([]);
-  const loading = value(true);
+  const posts = ref([]);
+  const loading = ref(true);
   const count = computed(() => posts.value.length);
   watch(
     () => count,

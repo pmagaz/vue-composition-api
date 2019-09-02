@@ -1,12 +1,12 @@
-## Example of use of Vue 3 Function API
+## Example of use of Vue 3 Composition API
 
-The new Function API is still a [RFC](https://github.com/vuejs/rfcs/blob/function-apis/active-rfcs/0000-function-api.md). This example is using [vue-function-api](https://github.com/vuejs/vue-function-api) plugin which allows to test the new API in Vue 2.x. 
+The new Composition API is still a [RFC](https://github.com/vuejs/rfcs/blob/function-apis/active-rfcs/0000-function-api.md). This example is using [@vue/composition-api](https://github.com/vuejs/composition-api) plugin which allows to test the new API in Vue 2.x. 
 
 ### Installing
 
 Clone the repository & install dependencies:
 ```
-$ git clone https://github.com/pmagaz/vue-function-api
+$ git clone https://github.com/pmagaz/vue-composition-api
 $ yarn / npm install
 ```
 
